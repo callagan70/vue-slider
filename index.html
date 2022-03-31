@@ -12,19 +12,20 @@
 </head>
 <body>
     <h1 class="text">Carosello</h1>
+
 <div id="root">
-
-<div id="carosello">
-    <div>
-        <i class="fa-solid fa-arrow-left dim" @click="sinistra()"></i>
-        <!-- <button type="button" @click="sinistra()">sinistra</button> -->
+    <div id="carosello">
+        <div>
+            <i class="fa-solid fa-arrow-left dim" @click="sinistra()"></i>
+        </div>
+                <img v-bind:src="immagini[indice]" alt="">
+        <div>
+            <i class="fa-solid fa-arrow-right dim" @click="destra()"></i>
+        </div>
+        <div class="pallini">
+            <div class="pallino" v-for="element in immagini"></div>
+        </div>
     </div>
-            <img v-bind:src="immagini[indice]" alt="">
-    <div>
-        <i class="fa-solid fa-arrow-right dim" @click="destra()"></i>
-    </div>
-</div>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

@@ -8,8 +8,7 @@ var app = new Vue(
             'https://source.unsplash.com/random/?city',
             'https://source.unsplash.com/random/?girls',
           ],
-
-          indice: 0
+        indice: 0
   },
 
   methods:{
