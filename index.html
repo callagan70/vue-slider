@@ -23,10 +23,11 @@
             <i class="fa-solid fa-arrow-right dim" @click="destra()"></i>
         </div>
         <div class="pallini">
-            <div class="pallino" v-for="element in immagini"></div>
+            <div class="pallino" v-for="(element, index) in immagini" @click="pallino"></div>
         </div>
     </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="./main.js"></script>

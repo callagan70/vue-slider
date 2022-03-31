@@ -24,8 +24,13 @@ var app = new Vue(
             this.indice = 3
         }
     },
-
+    pallino: function(index) 
+    {   this.indice = index
+        return index
+        console.log(index)
+    }
   }
 }
+
 )
 

@@ -36,9 +36,13 @@
 }
 
 .pallino{
-
     background: white;
     height: 0.8em;
     width: 0.8em;
     border-radius: 50px;
+}
+
+.pallino:hover{
+    background: aqua;
+    
 }
