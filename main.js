@@ -7,9 +7,26 @@ var app = new Vue(
             'https://source.unsplash.com/random/?fruits',
             'https://source.unsplash.com/random/?city',
             'https://source.unsplash.com/random/?girls',
-          ]
-    //   image: 'https://source.unsplash.com/random'
-  
+          ],
+
+          indice: 0
+  },
+
+  methods:{
+    destra: function(){
+        this.indice = this.indice + 1
+        if (this.indice > 3){
+            this.indice = 0
+        }
+    },
+    sinistra: function(){
+        this.indice = this.indice - 1
+        if (this.indice < 0){
+            this.indice = 3
+        }
+    },
+
   }
 }
 )
+
