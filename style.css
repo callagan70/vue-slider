@@ -2,4 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 75px;
+}
+
+#carosello img{
+    width: 750px;
+    height: 750px;
+}
+
+.dim{
+    font-size: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
